@@ -1,7 +1,12 @@
 @(message: String)
 
-@main("Welcome to Play 2.0") {
-    
-    @play20.welcome(message, style = "Java")
-    
+@layout("Welcome to Play 2.0") {
+	<div class="row">
+		<div class="span12">
+			<div class="page-header">
+				<h1>Welcome</h1>
+			</div>
+			<p>Your new application is ready.</p>
+		</div>
+	</div>
 }
