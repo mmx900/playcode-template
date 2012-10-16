@@ -5,12 +5,12 @@ import PlayProject._
 object ApplicationBuild extends Build {
 
     val appName         = "playcode-template"
-    val appVersion      = "1.0-SNAPSHOT"
+    val appVersion      = "1.0"
 
     val appDependencies = Seq(
       // Add your project dependencies here,
 		"org.hibernate" % "hibernate-entitymanager" % "4.1.7.Final",
-		"org.apache.commons" % "commons-email" % "1.2"
+		"javax.mail" % "mail" % "1.4.5"
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = JAVA).settings(
