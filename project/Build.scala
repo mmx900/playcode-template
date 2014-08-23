@@ -19,7 +19,9 @@ object ApplicationBuild extends Build {
 		"org.hibernate" % "hibernate-entitymanager" % "4.1.7.Final",
 		"javax.mail" % "mail" % "1.4.5",
 		"com.h2database" % "h2" % "1.4.177",
-		"org.apache.commons" % "commons-lang3" % "3.2.1"
+		"org.apache.commons" % "commons-lang3" % "3.2.1",
+		"org.webjars" % "jquery" % "2.1.1",
+		"org.webjars" % "bootstrap" % "3.2.0"
     )
 
     val main = Project(appName, file(".")).enablePlugins(play.PlayJava).settings(
